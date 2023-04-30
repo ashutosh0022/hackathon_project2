@@ -1,0 +1,133 @@
+.login-container {
+  height: calc(100vh - 7.5rem);
+  /* background-color: rgb(133, 87, 94); */
+  display: grid;
+  grid-template-columns: 10rem 1fr 10rem;
+}
+.l1 {
+  grid-column: 2/3;
+  /* background-color: pink; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.login1 {
+  /* height: 65%; */
+  width: 100%;
+  /* background-color: brown; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login-w {
+  /* background-color: rebeccapurple; */
+  width: 30%;
+  /* height: auto; */
+}
+.login2 {
+  height: 35%;
+  width: 100%;
+  /* background-color: #E25822; */
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.login21 label {
+  padding: 1rem;
+
+}
+.login21 label input {
+  background-color: #E25822;
+  color: white;
+  padding: 0.8rem;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.login21 label ::placeholder{
+  color: white;
+}
+.sub2{
+  background-color: #E25822;
+  color: white;
+}
+.no-ac{
+  padding-top: 0.5rem;
+}
+.pss{
+  position: relative;
+  margin-right: 1rem;
+}
+
+.i{
+  /* margin-right: 2rem; */
+  position: absolute;
+  margin-top: 0.8rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+/* ------------media queries----------- */
+
+@media screen and (max-width: 1500px) {
+  .login-w {
+    width: 35%;
+  }
+}
+
+@media screen and (max-width: 1275px) {
+  .login-container {
+    grid-template-columns: 3rem 1fr 3rem;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .login-container {
+    grid-template-columns: 1rem 1fr 1rem;
+  }
+  .login-w {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 845px) {
+  .login-container {
+    grid-template-columns: 0rem 1fr 0rem;
+  }
+
+  .login21 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .login21 label {
+    padding: 0.3rem;
+  }
+  .login21 label input {
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+  .sub2 {
+    margin-top: 1rem;
+  }
+  .login-w {
+    width: 55%;
+  }
+  .pss{
+    position: relative;
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .login-w {
+    width: 75%;
+  }
+}

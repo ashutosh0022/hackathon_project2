@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+
+.home-section {
+  /* background-color: rebeccapurple; */
+  width: 100%;
+  display: grid;
+  grid-template-columns: 10rem 1fr 1fr 10rem;
+  height: calc(100vh - 7.5rem);
+}
+
+.home-left {
+  /* background-color: pink; */
+  grid-column: 2/3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.home-left-content1 h1 {
+  font-size: 3rem;
+  font-weight: bolder;
+  font-family: "Poppins", sans-serif;
+}
+
+.home-left-content2 {
+  padding-top: 2rem;
+}
+.content3 {
+  padding: 0px;
+}
+.home-left-content2 h2 {
+  font-size: 1.6rem;
+  font-weight: lighter;
+  font-family: "Poppins", sans-serif;
+}
+.home-left-btn {
+  padding-top: 2rem;
+}
+
+.one-btn {
+  background: transparent;
+  background-color: #E25822;
+  color: white;
+}
+.home-right {
+  /* background-color: yellow; */
+  grid-column: 3/4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-right .img {
+  width: 100%;
+  height: auto;
+}
+
+/* media queries */
+
+@media screen and (max-width: 1500px) {
+  .home-left-content1 h1 {
+    font-size: 2.4rem;
+  }
+}
+
+@media screen and (max-width: 1275px) {
+  .home-section {
+    grid-template-columns: 3rem 1fr 1fr 3rem;
+  }
+
+  .home-left-content1 h1 {
+    font-size: 2rem;
+  }
+
+  .home-left-content2 h2 {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .home-section {
+    grid-template-columns: 1rem 1fr 1fr 1rem;
+  }
+}
+
+@media screen and (max-width: 845px) {
+  .home-section {
+    /* background-color: rebeccapurple; */
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    height: calc(100vh - 7.5rem);
+  }
+
+  .home-left {
+    /* background-color: pink; */
+    height: 50%;
+  }
+
+  .home-right {
+    /* background-color: yellow; */
+    height: 50%;
+  }
+
+  .home-right .img {
+    height: 100%;
+    width: auto;
+  }
+
+  .home-left-content1 h1 {
+    font-size: 1.8rem;
+  }
+
+  .home-left-content2 h2 {
+    font-size: 1rem;
+  }
+}

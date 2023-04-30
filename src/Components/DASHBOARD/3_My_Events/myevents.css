@@ -1,0 +1,236 @@
+.mcontainer {
+  /* background-color: pink; */
+  /* height: calc(100vh - 15.9rem); */
+  height: auto;
+  display: grid;
+  grid-template-columns: 10rem 1fr 10rem;
+}
+.mcontainer2 {
+  /* position: relative; */
+  grid-column: 2/3;
+  width: 100%;
+  /* heig
+  ht: 100%; */
+}
+
+.nodata {
+  /* background-color: red; */
+  /* height: calc(100vh - 15.9rem);; */
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+.nodatalottie {
+  margin-top: 8rem;
+  width: 25rem;
+}
+.eventlistcontainer {
+  /* background-color: rgb(212, 34, 72); */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(22rem, 1fr));
+  grid-gap: 1rem;
+  width: 100%;
+  /* height: 100%; */
+  height: min-content;
+}
+.listitems {
+position: relative;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+
+  /* height: min-content; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.5rem;
+}
+.featureimg1 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  /* flex-direction: column; */
+  height: 8rem;
+  width: 100%;
+  /* padding: 0.5rem 0 0.5rem 0; */
+  /* background-color: pink; */
+}
+.featureimg {
+  position: relative;
+  background-color: rgb(219, 222, 224);
+  /* margin: 0.5rem 0 0.5rem 0; */
+  border-radius: 10px;
+  /* height: 100%; */
+  width: 100%;
+}
+.featureimg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  opacity: 0.5;
+}
+.ttle {
+  /* margin: 0.5rem 0 0.5rem 0; */
+  position: absolute;
+  /* background-color: oldlace; */
+  height: 100%;
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+.ttle h1 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+.det {
+
+  height: 18rem;
+  padding: 1rem;
+  width: 100%;
+  background-color: rgb(213, 209, 219);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-direction: column;
+}
+.det p {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 0.1rem;
+  /* background-color: aliceblue; */
+}
+.spn2{
+font-weight: lighter;
+font-style: italic;
+/* font-size: 0.8rem; */
+}
+.ebtn {
+  padding: 0.4rem 0.75rem 0.4rem 0.75rem;
+  margin: 0.2rem;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  background-color: blueviolet;
+  color: white;
+  cursor: pointer;
+}
+
+.divbtns{
+  /* position: absolute; */
+  display: flex;
+  justify-content: center;
+  /* bottom: 0; */
+  /* align-items: flex-end; */
+  /* background-color: red; */
+  margin-top: 0.5rem;
+}
+
+.warn{
+  /* width: 10rem; */
+  /* width: rem; */
+  position: absolute;
+  /* background-color: rebeccapurple; */
+  height: 20%;
+  width: 95%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  /* border-radius: 5px; */
+}
+.d{
+  background-color: #E25822;
+  width: 75%;
+  height: 50%;
+  padding: 0.5rem;
+  color: white;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.warndata{
+  height: 100%;
+  width: 100%;
+  /* background-color: rgb(126, 115, 117); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* border-radius: 15px; */
+}
+.botn{
+  width: 75%;
+  height: 50%;
+  background-color: rgb(255, 255, 255);
+  padding: 0.5rem;
+  display: flex;
+  justify-content: flex-end;
+
+}
+.botn1{
+  color: white;
+  /* font-weight: 500; */
+  background-color: #E25822;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  padding-bottom: 0.3rem;
+  padding-left: 0.4rem;
+  padding-top: 0.3rem;
+  padding-right: 0.4rem;
+  margin-left: 0.2rem;
+  border-radius: 5px;
+}
+/* media queries */
+
+@media screen and (max-width: 1275px) {
+  .mcontainer {
+    grid-template-columns: 3rem 1fr 3rem;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .mcontainer {
+    grid-template-columns: 1rem 1fr 1rem;
+  }
+}
+
+@media screen and (max-width: 845px) {
+  .eventlistcontainer {
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  }
+  .listitems {
+    height: auto;
+  }
+  .nodatalottie {
+    width: 15rem;
+  }
+  .ttle h1 {
+    font-size: 1.5rem;
+  }
+  .det p {
+    font-size: 0.8rem;
+  }
+  .featureimg1 {
+    height: 7rem;
+
+  }
+  .ebtn {
+    font-size: 0.8rem;
+  }
+  .det {
+    height: 18rem;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  /* .eventlistcontainer {
+    grid-template-columns: repeat(auto-fill , minmax(15rem , 1fr) );
+  }
+  .listitems {
+    height: 20rem;
+  } */
+}

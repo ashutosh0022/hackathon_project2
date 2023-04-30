@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+.t-data {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  height: auto;
+  width: 75%;
+  /* background-color: rgb(167, 128, 128); */
+  /* From https://css.glass */
+  background: rgba(0, 122, 240, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: -1;
+  /* position: absolute; */
+}
+.t-data .profile img {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+}
+
+.t-data .name h2 {
+  font-family: "Poppins", sans-serif;
+  padding-top: 1rem;
+  font-weight: bold;
+}
+.t-data .prof p {
+  font-weight: lighter;
+}
+
+.t-data .icnq {
+  padding-top: 1.5rem;
+}
+.t-data .comment {
+  width: 50%;
+}
+.t-data .comment h3 {
+  font-weight: lighter;
+}
+
+/* media queries */
+
+@media screen and (max-width: 1500px) {
+}
+
+@media screen and (max-width: 1275px) {
+}
+
+@media screen and (max-width: 1020px) {
+  .t-data {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 845px) {
+  .t-data {
+    width: 95%;
+  }
+  .t-data .comment {
+    width: 75%;
+  }
+}

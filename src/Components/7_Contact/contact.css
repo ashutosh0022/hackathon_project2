@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+
+.contct{
+  position: relative;
+/* background-color:chocolate; */
+
+}
+.contact-main {
+
+  display: grid;
+  grid-template-columns: 15rem 1fr 1fr 15rem;
+  /* height: 50vh; */
+}
+.contact-main-2 {
+  position: relative;
+  grid-column: 2/3;
+  /* background-color: rgb(109, 103, 116); */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.contact-w {
+  position: relative;
+  padding-top: 5rem;
+  padding-bottom: 1rem;
+  width: 75%;
+  height: auto;
+  /* background-color: rebeccapurple; */
+}
+.contact-main-3 {
+  grid-column: 3/4;
+  /* background-color: rgb(31, 20, 20); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-main-3 {
+  width: 100%;
+  /* background-color: brown;/ */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* flex-direction: column; */
+}
+.b2 {
+  width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.b2 input,
+.b2 textarea {
+  margin: 1rem;
+  /* border: 2px solid rgba(200, 137, 230, 2);
+  box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137); */
+  background: none;
+  border-radius: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  outline: none;
+  /* border: none; */
+  font-size: 18px;
+  padding: 1rem;
+  border: 1.7px solid #E25822;
+  /* box-shadow: 4px 5px 4px 1px rgba(89, 4, 168, 0.1); */
+  box-shadow: 0 4px 30px rgba(0, 122, 240, 0.1);
+}
+
+.btn2 {
+  background-color: #E25822;
+}
+.btn2 a h5 {
+  color: white;
+}
+/* ------------media queries----------- */
+
+@media screen and (max-width: 1500px) {
+  .contact-main {
+    grid-template-columns: 10rem 1fr 1fr 10rem;
+  }
+}
+
+@media screen and (max-width: 1275px) {
+  .contact-main {
+    grid-template-columns: 3rem 1fr 1fr 3rem;
+  }
+  .contact-w {
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .contact-main {
+    grid-template-columns: 1rem 1fr 1fr 1rem;
+  }
+  .contact-w {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 845px) {
+  .contact-main {
+    grid-template-columns: 1rem 1fr 1rem;
+  }
+  .contact-main-2 {
+    justify-content: center;
+  }
+  .contact-main-3 {
+    grid-column: -3/-2;
+  }
+
+
+  .b2 input,
+  .b2 textarea {
+    width: 100%;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+
+  .b2 input,
+  .b2 textarea {
+    width: 90%;
+  }
+}

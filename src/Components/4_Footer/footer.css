@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@350;400;350&display=swap");
+
+.footer {
+  height: 35vh;
+  /* background-color: #E25822; */
+  background: linear-gradient(45deg, #E25822 , rgb(189, 28, 28));
+  width: 100%;
+  display: grid;
+  grid-template-columns: 10rem 1fr 1fr 1fr 10rem;
+}
+
+.footer-1 {
+  grid-column: 2/3;
+  /* background-color: rgb(70, 57, 41); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.f-1-1 h2{
+  font-family: "poppins", sans-serif;
+  font-size: 2rem;
+  font-weight: lighter;
+}
+
+.footer-2 h2{
+  font-family: "poppins", sans-serif;
+  font-size: 2rem;
+  font-weight: lighter;
+}
+.menu-content a h1 {
+  font-weight: lighter;
+  font-size: 1.2rem;
+  font-family: "poppins", sans-serif;
+  padding-top: 0.2rem;
+  color: white;
+}
+.footer-2 {
+  grid-column: 3/4;
+  /* background-color: brown; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.footer-2 .icc {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: rebeccapurple; */
+  font-size: 3rem;
+}
+.icn {
+  margin: 0.8rem;
+  cursor: pointer;
+}
+.footer-3 {
+  grid-column: 4/5;
+  /* background-color: chartreuse; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.footer-3 img {
+  width: 8rem;
+  height: auto;
+}
+
+.f3-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.f3-2 h1 {
+  font-weight: lighter;
+  font-size: 1.2rem;
+  font-family: "poppins", sans-serif;
+  padding-top: 1rem;
+}
+
+.f3-2-1 h1 {
+  padding: 0;
+  font-size: 1rem;
+}
+
+.f3-2-2 h1 {
+  padding-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.f3-2-3 h1 {
+  padding-top: 2rem;
+  font-size: 0.9rem;
+}
+.foot {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  padding-top: 1.2rem;
+  color: white;
+}
+
+/* media queries */
+
+@media screen and (max-width: 1350px) {
+}
+
+@media screen and (max-width: 1275px) {
+  .footer {
+    grid-template-columns: 3rem 1fr 1fr 1fr 3rem;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .footer {
+    grid-template-columns: 1rem 0.8fr 0.8fr 1fr 1rem;
+  }
+  .icn {
+    margin: 0.4rem;
+  }
+}
+
+@media screen and (max-width: 845px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+    height: auto;
+    padding-bottom: 1rem;
+  }
+  .footer-2 {
+    height: 50%;
+  }
+  .foot {
+    height: 100%;
+  }
+  .footer-2 .icc {
+    height: 50%;
+  }
+  .footer-1 {
+    padding-bottom: 2rem;
+  }
+  .footer-2 {
+    padding-bottom: 2rem;
+  }
+  .footer-3 {
+    padding-bottom: 1rem;
+  }
+
+  .footer-2 .icc {
+    padding-top: 0.3rem;
+  }
+}

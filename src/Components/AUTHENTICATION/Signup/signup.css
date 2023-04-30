@@ -1,0 +1,127 @@
+.container-signup {
+  display: grid;
+  grid-template-columns: 10rem 1fr 10rem;
+  /* background-color: rgb(161, 161, 101); */
+  height: calc(100vh - 7.5rem);
+}
+.container-signup-2 {
+  /* height: 100%; */
+  grid-column: 2/3;
+  /* background-color: rgb(122, 71, 80); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-container1 {
+  width: 100%;
+  /* height: 80%; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #E25822;
+  border-radius: 15px;
+}
+.ii{
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.ct3 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  width: 50%;
+  height: auto;
+  /* background-color: yellow; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.ct3 label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  padding: 0.2rem;
+}
+
+.ct3 label input {
+  padding: 0.8rem;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  width: 100%;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.sub {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  color: black;
+}
+.main-container2 {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.signup-w {
+  width: 75%;
+  height: auto;
+}
+/* ------------media queries----------- */
+
+@media screen and (max-width: 1500px) {
+}
+
+@media screen and (max-width: 1275px) {
+  .container-signup {
+    grid-template-columns: 3rem 1fr 3rem;
+  }
+  .ct3 {
+    padding-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .container-signup {
+    grid-template-columns: 1rem 1fr 1rem;
+  }
+  .container-signup-2 {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+  .signup-w {
+    width: 45%;
+    /* height: auto; */
+  }
+}
+
+@media screen and (max-width: 845px) {
+  .container-signup {
+    grid-template-columns: 1fr;
+  }
+  .container-signup-2 {
+    grid-column: 1/2;
+  }
+
+  .signup-w {
+    width: 65%;
+    /* height: auto; */
+  }
+  .ct3 {
+    width: 65%;
+    padding-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .signup-w {
+    width: 70%;
+    /* height: auto; */
+  }
+}

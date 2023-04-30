@@ -1,0 +1,159 @@
+.hostcontainer {
+  position: relative;
+  /* background-color: #2e3c4b; */
+  /* background-color: #4158d0;
+  background-image: linear-gradient(
+    203deg,
+    #E25822 0%,
+    #469bf0 50%,
+    #e4cb9c 100%
+  ); */
+  display: grid;
+  grid-template-columns: 10rem 0.75fr 1.25fr 10rem;
+
+  height: auto;
+  /* grid-template-columns: 10rem 0.75fr 1.25fr 10rem; */
+}
+.hostcontainerleft {
+  /* background-color: #e4cb9c; */
+  grid-column: 2/3;
+  display: grid;
+  place-items: center;
+  /* padding: 2rem; */
+}
+.lott {
+  /* background-color: rebeccapurple; */
+  display: grid;
+  place-items: center;
+  width: 80%;
+  height: auto;
+}
+.hostcontainerright {
+  grid-column: 3/4;
+  /* background-color: aqua; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0 1rem 0;
+}
+.form {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  /* background-color: #E25822; */
+  border-radius: 15px;
+
+  /* From https://css.glass */
+/* background: rgba(255, 255, 255, 0.2); */
+background-color: #3e4670;
+background-image: linear-gradient(
+  43deg,
+  #034b94 0%,
+  #469bf0 50%,
+  #e4cb9c 100%
+);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5.5px);
+-webkit-backdrop-filter: blur(5.5px);
+}
+.sec1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+  /* background-color: #E25822; */
+  padding: 1rem 0 2rem 0;
+}
+.sec1 input,
+.sec2 input {
+  width: 80%;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+.sec2 textarea {
+  width: 80%;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+.sec2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+  /* background-color: #332c20; */
+  padding: 2rem 0 2rem 0;
+}
+.sec2 input {
+  width: 80%;
+}
+
+.sec1 h2,
+.sec2 h2 {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+  font-weight: 300;
+  font-family: "Rubik", sans-serif;
+}
+.hostbtn {
+  margin-top: 2rem;
+}
+
+#fileupload{
+  width: 80%;
+background-color: rgb(255, 255, 255);
+}
+
+
+/* -------------------- */
+
+/* ------------media queries----------- */
+
+@media screen and (max-width: 1275px) {
+  .hostcontainer {
+    grid-template-columns: 3rem 1fr 1fr 3rem;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .hostcontainer {
+    grid-template-columns: 1rem 1fr 1fr 1rem;
+  }
+}
+
+@media screen and (max-width: 845px) {
+  .hostcontainer {
+    grid-template-columns: 1rem 1fr 1rem;
+  }
+  .hostcontainerright {
+    grid-column: -3/-2;
+    /* background-color: aqua; */
+  }
+  /* .lott {
+    width: 20rem;
+    height: auto;
+  } */
+  .form {
+    flex-direction: column;
+  }
+  .sec1 {
+    width: 100%;
+  }
+  .sec2 {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+}
